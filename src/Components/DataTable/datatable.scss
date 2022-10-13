@@ -1,0 +1,28 @@
+.datatable {
+    width: 80%;
+    height: 50%;
+
+    .cellAction {
+        display: flex;
+    }
+
+    .viewbutton {
+        margin: 5px;
+        background-color: green;
+        padding: 5px;
+        width: 50px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    .deletebutton {
+        margin: 5px;
+        background-color: red;
+        padding: 5px;
+        width: 50px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+}
