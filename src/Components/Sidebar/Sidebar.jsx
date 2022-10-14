@@ -36,8 +36,10 @@ export default function Sidebar() {
                         </Link></li>
 
                     <li>
-                        <ProductionQuantityLimitsOutlinedIcon className='icon' />
-                        <span>Product</span></li>
+                        <Link to="/product" style={{ display: 'flex', textDecoration: 'none' }}>
+                            <ProductionQuantityLimitsOutlinedIcon className='icon' />
+                            <span>Product</span>
+                        </Link></li>
 
                     <li>
                         <ShoppingBagOutlinedIcon className='icon' />

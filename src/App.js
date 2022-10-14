@@ -14,15 +14,15 @@ function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="user" >
-            <Route index element={<List />} />
+            <Route index element={<List title='User' button='Add new ' icon=" PersonIcon" user="user" />} />
             <Route path=":userId" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route path="new" element={<New title='User' />} />
           </Route>
 
           <Route path="product" >
-            <Route index element={<List />} />
+            <Route index element={<List title='Product' button='Add new ' icon="ProductionQuantityLimitsIcon" user='product' />} />
             <Route path=":productId" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route path="new" element={<New title='Products' />} />
           </Route>
         </Route>
 

@@ -4,14 +4,14 @@ import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Navbar from '../../Components/Navbar/Navbar'
 import Button from '@mui/material/Button';
-export default function New() {
+export default function New(props) {
     return (
         <div className='new'>
             <Sidebar />
             <div className="newcontainer">
                 <Navbar />
                 <div className='addnewtitle'>
-                    <h1>Add new</h1>
+                    <h1>Add new {props.title}</h1>
                 </div>
                 <div className='addnew'>
                     <div className='left'>
