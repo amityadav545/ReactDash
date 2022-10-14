@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 import '../Sidebar/sidebar.scss'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
@@ -21,13 +22,18 @@ export default function Sidebar() {
                 <ul>
                     <p className="title">MAIN</p>
                     <li>
-                        <DashboardIcon className='icon' />
-                        <span>Dashbord</span></li>
+                        <Link to="/" style={{ display: 'flex', textDecoration: 'none' }}>
+                            <DashboardIcon className='icon' />
+                            <span>Dashbord</span>
+                        </Link>
+                    </li>
 
                     <p className="title">LIST</p>
                     <li>
-                        <PersonOutlineOutlinedIcon className='icon' />
-                        <span>User </span></li>
+                        <Link to="/user" style={{ display: 'flex', textDecoration: 'none' }}>
+                            <PersonOutlineOutlinedIcon className='icon' />
+                            <span>User </span>
+                        </Link></li>
 
                     <li>
                         <ProductionQuantityLimitsOutlinedIcon className='icon' />
@@ -58,10 +64,7 @@ export default function Sidebar() {
                         <span>Logout</span></li>
                 </ul>
             </div>
-            <div className="bottom">
-                <div className="coloroption"></div>
-                <div className="coloroption"></div>
-            </div>
-        </div>
+
+        </div >
     )
 }

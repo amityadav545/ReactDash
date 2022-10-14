@@ -6,7 +6,9 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import avtar from '../Navbar/result.jpeg'
+import Language from './Language/Language';
 export default function Navbar() {
+
     return (
         <div className='navbar'>
             <div className='wrapper'>
@@ -16,8 +18,8 @@ export default function Navbar() {
                 </div>
                 <div className='items'>
                     <div className="item">
-                        <LanguageOutlinedIcon className='icon' />
-                        English
+                       
+                        <Language />
                     </div>
 
                     <div className="item">

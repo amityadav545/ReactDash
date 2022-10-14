@@ -1,0 +1,35 @@
+.new {
+    display: flex;
+    width: 100%;
+
+    .newcontainer {
+        flex: 6;
+
+        .addnew {
+            display: flex;
+            width: 98%;
+            border: 2px solid black
+        }
+
+        .left {
+            display: flex;
+            flex: 4;
+            border: 2px solid black;
+            align-items: center;
+            justify-content: center;
+
+            .newimages {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+                margin: 20px;
+                border: 1px solid gray;
+            }
+        }
+
+        .right {
+            flex: 7;
+            border: 2px solid black;
+        }
+    }
+}

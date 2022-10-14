@@ -9,7 +9,10 @@ export default function List() {
             <Sidebar />
             <div className="listcontainer">
                 <Navbar />
-                <DataTable />
+                <div className='sectiondatatable' style={{ width: '100%', height: '100%' }}>
+                    <div><span className='nametitle'>User Table</span></div>
+                    <DataTable />
+                </div>
             </div>
         </div>
     )

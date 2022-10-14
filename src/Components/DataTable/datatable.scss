@@ -1,12 +1,16 @@
 .datatable {
-    width: 80%;
-    height: 50%;
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(250, 250, 250);
+
 
     .cellAction {
         display: flex;
     }
 
     .viewbutton {
+        border-radius: 3px;
         margin: 5px;
         background-color: green;
         padding: 5px;
@@ -14,9 +18,14 @@
         text-align: center;
         color: white;
         cursor: pointer;
+
+        &:hover {
+            background-color: rgb(89, 192, 89);
+        }
     }
 
     .deletebutton {
+        border-radius: 3px;
         margin: 5px;
         background-color: red;
         padding: 5px;
@@ -24,5 +33,27 @@
         text-align: center;
         color: white;
         cursor: pointer;
+
+        &:hover {
+            background-color: rgb(201, 65, 65);
+        }
+
+
+    }
+
+    .status {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &.Active {
+            background-color: #00f50047;
+            border-radius: 3px;
+        }
+
+        &.Ofline {
+            background-color: #ff00005e;
+            border-radius: 3px;
+
+        }
     }
 }
