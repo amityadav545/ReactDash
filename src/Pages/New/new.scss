@@ -5,22 +5,30 @@
     .newcontainer {
         flex: 6;
 
+        .addnewtitle {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
         .addnew {
             display: flex;
             width: 98%;
-            border: 2px solid black
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
         }
 
         .left {
             display: flex;
             flex: 4;
-            border: 2px solid black;
+
             align-items: center;
             justify-content: center;
 
             .newimages {
-                height: 400px;
-                width: 400px;
+                height: 300px;
+                width: 300px;
                 border-radius: 50%;
                 margin: 20px;
                 border: 1px solid gray;
@@ -29,7 +37,44 @@
 
         .right {
             flex: 7;
-            border: 2px solid black;
+
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                justify-content: center;
+                margin-top: 20px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+
+                .formInput {
+                    width: 40%;
+
+                    .iconimg {
+                        width: 50px;
+                        color: rgb(157, 127, 255);
+                        height: 50px;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    border: none;
+                    border-bottom: 1px solid gray;
+
+                }
+            }
+
+            .buttomform {
+                display: block;
+
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
         }
     }
 }
