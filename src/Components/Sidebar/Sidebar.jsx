@@ -22,7 +22,7 @@ export default function Sidebar() {
                 <ul>
                     <p className="title">MAIN</p>
                     <li>
-                        <Link to="/" style={{ display: 'flex', textDecoration: 'none' }}>
+                        <Link to="/dashbord" style={{ display: 'flex', textDecoration: 'none' }}>
                             <DashboardIcon className='icon' />
                             <span>Dashbord</span>
                         </Link>
@@ -42,15 +42,16 @@ export default function Sidebar() {
                         </Link></li>
 
                     <li>
-                        <ShoppingBagOutlinedIcon className='icon' />
-                        <span>Order</span></li>
+
+                        <Link to="/user" style={{ display: 'flex', textDecoration: 'none' }}>
+                            <ShoppingBagOutlinedIcon className='icon' />
+                            <span>Order</span>
+                        </Link></li>
                     <li>
                         <LocalShippingOutlinedIcon className='icon' />
                         <span>Delivery</span></li>
                     <p className="title">SERVICES</p>
-                    <li>
-                        < CampaignOutlinedIcon className='icon' />
-                        <span>Notification</span></li>
+
 
                     <li>
                         < AccountBoxOutlinedIcon className='icon' />
@@ -58,12 +59,11 @@ export default function Sidebar() {
                     <li>
                         <FavoriteBorderOutlinedIcon className='icon' />
                         <span>System.health</span></li>
+
                     <li>
-                        <SettingsOutlinedIcon className='icon' />
-                        <span>Setting</span></li>
-                    <li>
-                        <ExitToAppOutlinedIcon className='icon' />
-                        <span>Logout</span></li>
+                        <Link to='/' style={{ display: 'flex', textDecoration: 'none' }}>
+                            <ExitToAppOutlinedIcon className='icon' />
+                            <span>Logout</span></Link></li>
                 </ul>
             </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import '../Widgets/widgets.scss'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import GroupIcon from '@mui/icons-material/Group';
@@ -63,7 +64,8 @@ export default function Widgets({ type }) {
             <div className="left">
                 <span className='title'>{data.title}</span>
                 <span className='counter'>{data.ismoney && "$"}{amount}</span>
-                <span className='link'>{data.link}</span>
+                <Link to={data.title} style={{ textDecoration: 'none' }}>
+                    <span className='link'>{data.link}</span></Link>
             </div>
             <div className="right">
                 <div className='percentage positive'>
