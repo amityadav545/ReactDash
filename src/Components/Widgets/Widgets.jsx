@@ -59,12 +59,14 @@ export default function Widgets({ type }) {
         default:
             break;
     }
+
+
     return (
         <div className='widget'>
             <div className="left">
                 <span className='title'>{data.title}</span>
                 <span className='counter'>{data.ismoney && "$"}{amount}</span>
-                <Link to={data.title} style={{ textDecoration: 'none' }}>
+                <Link to={`/${type}`} style={{ textDecoration: 'none' }}>
                     <span className='link'>{data.link}</span></Link>
             </div>
             <div className="right">
